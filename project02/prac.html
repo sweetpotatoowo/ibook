@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const city = ['Taipei','Tokyo','Hong Kong','Hong Kong','Singapore'];
+        // const deleteCity = city.indexOf('Hong Kong');
+        // if(deleteCity>-1){
+        //     city.splice(deleteCity,1)
+        // }
+        // console.log(city);
+
+        const newCity = city.filter((cityName)=>{
+            return cityName !== 'Hong Kong'
+        })
+        console.log(newCity);
+
+        const uniqueCity = city.filter((cityName,index)=>{
+
+            console.log(city.indexOf(cityName));
+            return city.indexOf(cityName) === index;
+        });
+        console.log(uniqueCity);
+    </script>
+</body>
+</html>
